@@ -1,0 +1,9 @@
+task 1 
+
+make partial view get categories from data base and repeat it in all pages in the footer
+
+task2 
+
+get the content of "my div " and show itin alert when click on the "ok" button
+
+
