@@ -26,5 +26,9 @@ namespace mvc_app5.Controllers
 
             return View();
         }
+        public ActionResult AnimateImage()
+        {
+            return View(); 
+        } 
     }
 }

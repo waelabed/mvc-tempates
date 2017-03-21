@@ -24,7 +24,8 @@ namespace mvc_app5.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-
+        public IDbSet<OurService> Services { get; set; }
+        public IDbSet<Team> Teams { get; set; }
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

@@ -13,8 +13,11 @@
 
     <!-- welcome -->
 
-    @Html.Partial("_FeaturedServices")
-
+    
+    @{
+        Html.RenderAction("GetServices","Services");
+    }
+    
     <!-- //welcome -->
 </div>
 <!-- special -->

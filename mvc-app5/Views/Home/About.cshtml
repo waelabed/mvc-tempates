@@ -23,88 +23,13 @@
             </a>
         </div>
     </div>
-    @Html.Partial("_FeaturedServices")
+    @{
+        Html.RenderAction("GetServices", "Services");
+    }
 </div>
-<div class="team-section">
-    <div class="container">
-        <h3 class="tittle">Our Team</h3>
-        <div class="team-row">
-            <div class="col-md-3 team-grids">
-                <div class="team-img">
-                    <img class="img-responsive" src="../images/t1.jpg" alt="">
-                    <div class="captn">
-                        <ul class="top-links">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="team-agile">
-                    <h4>Sophia</h4>
-
-                </div>
-            </div>
-            <div class="col-md-3 team-grids">
-                <div class="team-img">
-                    <img class="img-responsive" src="../images/t2.jpg" alt="">
-                    <div class="captn">
-                        <ul class="top-links">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="team-agile">
-                    <h4>Michael</h4>
-
-                </div>
-            </div>
-            <div class="col-md-3 team-grids">
-                <div class="team-img">
-                    <img class="img-responsive" src="../images/t3.jpg" alt="">
-                    <div class="captn">
-                        <ul class="top-links">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="team-agile">
-                    <h4>Jessica</h4>
-
-                </div>
-            </div>
-            <div class="col-md-3 team-grids">
-                <div class="team-img">
-                    <img class="img-responsive" src="../images/t4.jpg" alt="">
-                    <div class="captn">
-                        <ul class="top-links">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="team-agile">
-                    <h4>Edwards</h4>
-
-                </div>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-    </div>
-</div>
+@{ 
+    Html.RenderAction("GetTeams", "Teams");
+}
 <!-- welcome -->
 <div class="welcome-section-wthree">
     <div class="container">

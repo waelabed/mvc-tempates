@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "AnimateImage";
+    Layout = null;
+}
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<style type="text/css">
+    .animateDiv{
+        border:1px solid RED;
+        padding:8px;
+        margin:4px;
+    }
+    .animateDiv div{
+        border:1px solid green;
+        padding:8px;
+        margin:4px;
+    }
+</style>
+<div class="container">
+    <h2>AnimateImage</h2>
+    <div id="mydiv" class="animateDiv">
+        <div>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown 
+            <div>
+                child div<br />
+                electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+            </div>
+        </div>
+         <div>
+             electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+         </div>
+
+    </div> 
+    <div class="animateDiv">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+    </div> 
+    <br />
+    <input id="btnToggle" type="button" class="btn btn-primary" name="toggle" value="Toggle" />
+</div>
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+    $(function () { 
+        //changeDivSize();
+        $("#btnToggle").click(function () {
+            toggleDiv();
+            //alert('helle jquery');
+        });
+    });
+
+
+    function toggleDiv() {
+        $("#mydiv > div").toggle(5000);
+    }
+
+    function changeDivSize() {
+        $("#mydiv").mouseover(function () {
+            $(this).animate({ height: '+=1500', width: '+=1' })
+.animate({ height: '-=1500', width: '-=1' });
+        });
+    }
+</script>
